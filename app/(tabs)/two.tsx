@@ -1,12 +1,16 @@
 import { StyleSheet, TouchableOpacity } from "react-native";
 import EditScreenInfo from "@/components/EditScreenInfo";
 import { Text, View } from "@/components/Themed";
-import BleInit from "@/components/BleFuncs";
+import useBle from "@/components/BleFuncs";
 
 export default function TabTwoScreen() {
-  const handleConnect = () => {
-    // Connect to a BLE device using BLEfuncs component
-    BleInit();
+  const { scanPeripherals, requestPermissions } = useBle();
+
+  const scanForDevices = async () => {
+    const isPermissionEnabled = await requestPermissions();
+    if (isPermissionEnabled) {
+      scanPeripherals();
+    }
   };
 
   return (
@@ -17,7 +21,7 @@ export default function TabTwoScreen() {
         lightColor="#eee"
         darkColor="rgba(255,255,255,0.1)"
       />
-      <TouchableOpacity style={styles.button} onPress={handleConnect}>
+      <TouchableOpacity style={styles.button} onPress={scanForDevices}>
         <Text style={styles.buttonText}>Connect</Text>
       </TouchableOpacity>
       <EditScreenInfo path="app/(tabs)/two.tsx" />
