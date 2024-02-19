@@ -1,4 +1,5 @@
 # Arduino talking foam head
+
 Arduino project that uses BLE, IR receivers, speakers and an SD card to produce sound from a foam mannequin head.
 
 # Components
@@ -12,8 +13,9 @@ Arduino project that uses BLE, IR receivers, speakers and an SD card to produce 
 
 # Libraries used
 
-- IRSmallDecoder
+- IRsmallDecoder
 - SD
 
 # Diagram
 
+# Images
