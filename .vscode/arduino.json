@@ -1,4 +1,0 @@
-{
-    "sketch": "arduino\\Head.ino",
-    "board": "arduino:mbed_nano:nano33ble"
-}

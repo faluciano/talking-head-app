@@ -6,4 +6,6 @@ The app connects to the arduino and board and enables sounds to be played.
 
 # Technologies
 
-React native, Expo, BLE, Typescript.
+React native, Expo, BLE, Typescript
+
+[Arduino project](/arduino)
