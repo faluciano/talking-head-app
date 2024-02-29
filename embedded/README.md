@@ -4,7 +4,7 @@ Arduino project that uses BLE, IR receivers, speakers and an SD card to produce 
 
 # Components
 
-- Arduino 33 Sense BLE
+- ESP32 Board
 - IR receiver
 - IR remote
 - Piezzo speaker
@@ -13,8 +13,7 @@ Arduino project that uses BLE, IR receivers, speakers and an SD card to produce 
 
 # Libraries used
 
-- IRsmallDecoder
-- SD
+- Rust ESP-IDF
 
 # Diagram
 

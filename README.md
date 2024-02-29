@@ -1,11 +1,11 @@
 # Talking head companion app
 
-This app is part of a project I am currently working on using an arduino BLE 33 sense.
+This app is part of a project I am currently working on using an ESP32 microcontroller.
 
-The app connects to the arduino and board and enables sounds to be played.
+The app connects to the esp32 and enables sounds to be played.
 
 # Technologies
 
-React native, Expo, BLE, Typescript
+React native, Expo, Bluetooth, Typescript, Rust
 
-[Arduino project](/arduino)
+[ESP32 project](/arduino)
