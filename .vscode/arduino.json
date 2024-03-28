@@ -1,5 +1,0 @@
-{
-    "board": "arduino:mbed_nano:nano33ble",
-    "port": "COM6",
-    "sketch": "arduino\\Head\\Head.ino"
-}
